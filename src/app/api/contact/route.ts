@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 const recentRequests = new Map<string, number>();
 
 export async function POST(request: Request) {
-  const body = await request.json().catch(() => null) as { name?: unknown; email?: unknown; message?: unknown; mobile?: unknown; company?: unknown; userType?: unknown; website?: unknown; captchaToken?: unknown } | null;
+  const body = await request.json().catch(() => null) as { name?: unknown; userName?: unknown; email?: unknown; message?: unknown; mobile?: unknown; company?: unknown; organization?: unknown; userType?: unknown; website?: unknown; captchaToken?: unknown } | null;
   const name = typeof body?.name === "string" ? body.name.trim() : typeof body?.userName === "string" ? body.userName.trim() : "";
   const email = typeof body?.email === "string" ? body.email.trim() : "";
   const message = typeof body?.message === "string" ? body.message.trim() : ""; const organization = typeof body?.organization === "string" ? body.organization.trim() : typeof body?.company === "string" ? body.company.trim() : "";
