@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const links = [["Home", "/", "hero"], ["Advertiser", "/#advertiser", "advertiser"], ["Publisher", "/#publisher", "publisher"], ["Our Focus", "/#focus", "focus"], ["Portfolio", "/#portfolio", "portfolio"], ["Team", "/#team", "team"], ["Contact Us", "/contact", "contact"]] as const;
+const links = [["Home", "/", "hero"], ["Advertiser", "/#advertiser", "advertiser"], ["Publisher", "/#publisher", "publisher"], ["Our Focus", "/#focus", "focus"], ["Portfolio", "/#portfolio", "portfolio"], ["Affiliate Programs", "/affiliate-programs", ""], ["Team", "/#team", "team"], ["Contact Us", "/contact", "contact"]] as const;
 
 export default function WebsiteHeader() {
   const [open, setOpen] = useState(false);
