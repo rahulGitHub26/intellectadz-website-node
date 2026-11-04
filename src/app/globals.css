@@ -47,6 +47,11 @@ main > section:not(#hero):not(#contact)::before { content: ""; position: absolut
 input, textarea, select { transition: border-color 200ms ease, box-shadow 200ms ease; }
 input:focus, textarea:focus, select:focus { border-color: #fb923c !important; box-shadow: 0 0 0 4px rgb(251 146 60 / .12); outline: none; }
 
+/* Keep muted copy readable against the site's dark surfaces. */
+footer .text-slate-500 { color: #cbd5e1 !important; }
+footer .text-slate-300 { color: #e2e8f0 !important; }
+#hero .text-slate-200, #modus-operandi .text-slate-300, #contact .text-slate-300 { color: #e2e8f0 !important; }
+
 .website-reveal-ready { opacity: 0; transform: translateY(18px); }
 .website-reveal-in { opacity: 1; transform: translateY(0); transition: opacity 700ms ease, transform 700ms ease; }
 @media (prefers-reduced-motion: reduce) { .website-reveal-ready { opacity: 1; transform: none; } .website-reveal-in { transition: none; } }
